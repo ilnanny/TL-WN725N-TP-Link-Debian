@@ -1,0 +1,1 @@
+cmd_/home/ilnanny/rtl8188eu/8188eu.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/ilnanny/rtl8188eu/8188eu.ko /home/ilnanny/rtl8188eu/8188eu.o /home/ilnanny/rtl8188eu/8188eu.mod.o
