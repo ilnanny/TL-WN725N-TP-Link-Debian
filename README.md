@@ -18,6 +18,8 @@ cd TL-WN725N-TP-Link-Debian
 
 make all
 
+su 
+
 make install
 
 insmod 8188eu.ko
