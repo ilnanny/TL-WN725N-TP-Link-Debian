@@ -14,7 +14,7 @@ apt-get install build-essential
 
 git clone https://github.com/ilnanny/TL-WN725N-TP-Link-Debian.git
 
-cd rtl8188eu
+cd TL-WN725N-TP-Link-Debian
 
 make all
 
