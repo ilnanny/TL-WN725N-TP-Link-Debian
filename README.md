@@ -1,31 +1,28 @@
-<b>TL-WN725N-TP-Link- driver for Debian and Derivates o.s.</b>
+# TL-WN725N-TP-Link Driver for Debian and Derivates
 
 
 <img src="https://github.com/ilnanny/TL-WN725N-TP-Link-Debian/blob/master/TP_Link_TL_WN725N_Debian_ilnanny.jpg" alt="TL-WN725N-TP-Link- driver for Debian and Derivates o.s" />
 
+**Note**: Use `su` in terminal emulator
 
-<b>Use su in terminal emulator.
+1. Install dependencies
+    ``` bash
+    apt-get update
+    apt-get install linux-headers-$(uname -r)
+    apt-get install build-essential
+    ```
+2. Clone repository
 
-apt-get update
-apt-get install linux-headers-$(uname -r)
+    ``` bash
+    git clone https://github.com/ilnanny/TL-WN725N-TP-Link-Debian.git
+    ```
+3. Build and Install
+    ``` bash
+    cd TL-WN725N-TP-Link-Debian
+    make all
+    make install
+    insmod 8188eu.ko
+    ```
+    You can check to see if your wireless wlan cards is now listed using `ifconfig` or `ip a`
 
-apt-get update
-apt-get install build-essential
-
-git clone https://github.com/ilnanny/TL-WN725N-TP-Link-Debian.git
-
-cd TL-WN725N-TP-Link-Debian
-
-make all
-
-su 
-
-make install
-
-insmod 8188eu.ko
-
- ifconfig 
-(check to see if your wireless wlan cards is now listed)
-
-
-reboot</b>
+4. Reboot
