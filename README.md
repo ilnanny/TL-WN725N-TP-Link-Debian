@@ -26,3 +26,11 @@
     You can check to see if your wireless wlan cards is now listed using `ifconfig` or `ip a`
 
 4. Reboot
+
+___________________________________________________________________________________________________________
+** Before opening an issue  topic, make sure you have active drivers in your kernel, you can check with:
+    ``` bash
+    zcat /proc/config.gz | grep CONFIG_ATH
+    ```
+make sure you put the 'm' or 'yes' in the categories concerning all 'CONFIG_ATH9K'
+___________________________________________________________________________________________________________
