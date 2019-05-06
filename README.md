@@ -30,9 +30,9 @@
 ___________________________________________________________________________________________________________
 ** Before opening an issue  topic, make sure you have active drivers in your kernel, you can check with:
 
-    ``` bash
+
     zcat /proc/config.gz | grep CONFIG_ATH
-    ```
+
     
 make sure you put the 'm' or 'yes' in the categories concerning all 'CONFIG_ATH9K'
 ___________________________________________________________________________________________________________
